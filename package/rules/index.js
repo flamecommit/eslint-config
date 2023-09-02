@@ -35,7 +35,17 @@ module.exports = {
     },
   },
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5",
+        "useTabs": false,
+        "endOfLine": "auto"
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { extensions: [".ts", ".tsx"] }],
     "no-console": "off",
